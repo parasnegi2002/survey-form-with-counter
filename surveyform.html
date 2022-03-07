@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #05c46b;
+        font-family: Verdana;
+        text-align: center;
+      }
+      form {
+        background-color: #fafafad2;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+      .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+      }
+      .form-control label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      span {
+        font-size: 15px;
+        color: rgb(5, 5, 5);
+      }
+      .charactersCounter {
+        width: 25rem;
+        height: 90px;
+        background-color: lightblue;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        position: fixed;
+      }
+      .charactersCounter * {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="charactersCounter">
+      <span>filled input field</span>
+      <br />
+      <br />
+      <div id="cCount">0</div>
+    </div>
+    <h1>form</h1>
+    <form id="form">
+      <div class="form-control">
+        <label for="name" id="label-name"> name </label>
+        <input type="text" class="input-text" id="name" placeholder="enter your name"  />
+      </div>
+      <br />
+      <br />
+      <div class="form-control">
+        <label for="rollno" id="label-rollno"> roll no.:</label>
+        <input type="roll no." class="input-text" id="rollno." placeholder="rollnumber" />
+      </div>
+      <br />
+      <div class="form-control">
+        <label for="email" id="label-email"> email: </label>
+        <input type="email" class="input-text" id="my email" placeholder="my email" />
+      </div>
+      <br />
+      <div class="form-control">
+        Gender:Male <input type="radio" name="mygender" class="input-radio"/>female
+        <input type="radio" name="mygender" class="input-radio" /> other
+        <input type="radio" name="mygender" class="input-radio" />
+      </div>
+      <br />
+      <br />
+      <div class="form-control">
+        <label for="date"> date: </label>
+        <input type="date" class="input-date" id="mydate" placeholder="date"  />
+      </div>
+      <br />
+      <div class="form-control">
+        <label for="eligible" id="eligible"> are you eligible: </label>
+        yes <input type="checkbox" class="input-checkbox" id="myeligibility"/> 
+        no<input type="checkbox" id="myeligibility"/>
+      </div>
+      <br />
+      <div class="form-control">
+        <label for="write about your self" id="label-textarea">
+          write about your self:
+        </label>
+        <textarea
+          name="comment"
+          class="input-text"
+          id="comment"
+          cols="30"
+          rows="10"
+          placeholder="write about your self"
+         
+        ></textarea>
+      </div>
+      <div class="form-control">
+        <input  type="button" value="submitnow" />
+      </div>
+      <div class="form-control">
+        <input type="reset" value="resetnow" />
+      </div>
+    </form>
+    <script src="surveyform.js" ></script>
+
+  </body>
+</html>
